@@ -1,0 +1,33 @@
+{
+  "name": "slack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e ts --exec \"npm run build && npm run run\"",
+    "build": "tsc",
+    "run": "node ./build/index.js",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsx0806/slack-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsx0806/slack-test/issues"
+  },
+  "homepage": "https://github.com/rsx0806/slack-test#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.13.1",
+    "@types/node": "^20.1.4",
+    "@types/node-cron": "^3.0.7",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "node-cron": "^3.0.2",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
+  }
+}
